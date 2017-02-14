@@ -1,17 +1,27 @@
 var React = require('react');
 
-var WeatherMessage = React.createClass({
+// var WeatherMessage = React.createClass({
+//
+//    render: function(location, temp){
+//      var {location, temp} = this.props;
+//      return(
+//        <form>
+//          <p>It's {temp} in {location}</p>
+//
+//        </form>
+//      );
+//    }
+//
+// });
+var WeatherMessage = ({temp,location}) => {
 
-   render: function(location, temp){
-     var {location, temp} = this.props;
-     return(
-       <form>
-         <p>It's {temp} in {location}</p>
+  return(
+    <form>
+      <p>It's {temp} in {location}</p>
 
-       </form>
-     );
-   }
+    </form>
+  );
 
-});
+}
 module.exports = WeatherMessage;
 //openweathermap
