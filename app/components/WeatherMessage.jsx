@@ -16,10 +16,10 @@ var React = require('react');
 var WeatherMessage = ({temp,location}) => {
 
   return(
-    <form>
-      <p>It's {temp} in {location}</p>
 
-    </form>
+      <h3 className="text-center">It's {temp} in {location}</h3>
+
+  
   );
 
 }
